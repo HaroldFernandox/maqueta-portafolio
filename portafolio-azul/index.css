@@ -1,0 +1,203 @@
+html{
+    font:1.2em consolas;
+    --webkit-border: radius 20px;
+    --moz-border: radius 20px;
+    --o-border: radius 20px;
+    --ms-border: radius 20px;
+}
+::-webkit-scrollbar {
+    display: none;
+   }
+
+img{ 
+    max-width:100%;
+}
+li{
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+/*todo esto es el nav*/
+.foto1{
+    border-radius: 45%;
+    filter: invert();
+}
+.navbar{
+    background-color: black;
+} 
+#offcanvasDarkNavbar{
+background: transparent;
+color: black;
+backdrop-filter: blur(10px);
+}
+
+
+
+.offcanvas{
+display: grid;
+width: 100%;
+color: #ffffff00;
+position: absolute;
+max-width:none;
+place-items: center;
+}
+
+
+.offcanvas-title{
+    color: aliceblue;
+}
+.btn-close{
+    color: aliceblue;
+    position: absolute;
+    right: 10%;
+}
+
+/*todo esto es el nav*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*todo esto es el section
+ color azul con beige*/
+
+section{
+    background: linear-gradient(black , red,black);
+ /*  background-color: rgb(208, 126, 25); */
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,6fr);
+   grid-template-areas: 
+    "n1 n2"
+    "n1 n2"
+    "n1 n2"
+    "n1 n3"
+    "n1 n3"
+    "n1 n3";
+    text-align: center;
+}
+
+img.img-fluid{
+    grid-area: n1;
+    padding: 5%;
+    border-radius: 40%;
+    place-items: center;
+}
+h1.tituloPresentacion{
+  grid-area: n2;
+  padding: 5%;
+  color: white;
+}
+div.presentacion{
+    color: rgb(240, 234, 226);
+place-items: center;
+grid-area: n3;
+padding: 5%;
+}
+
+
+
+
+
+
+
+b{
+    color: aliceblue;
+}
+.tituloseccion{
+display: grid;
+place-items: center;
+background-color: rgb(0, 0, 0);
+font-size: 30px;
+height: max-content;
+}
+div.row{
+    background-image: url(imagenes/lava.png);
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+     "n1 n2 n3"
+     "n4 n5 n6";
+     background-color: rgba(0, 255, 255, 0);
+     height: max-content;
+     grid-gap: 20px;
+     box-sizing: border-box;
+     padding: 3%;
+     width: 100%;
+     margin-inline: 0;
+    padding-inline: 15px;
+
+
+}
+h2{
+    color: aliceblue;
+    text-shadow: black 20px;
+}
+a.nav-link{
+    color: rgb(255, 255, 255);
+    
+}
+
+.Frontend,.Backend,.Fullstack,.BasesDeDatos,.devops,.paginas{
+    border: solid 4px rgb(0, 0, 0);
+    padding: 5%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(black , red);
+    border-radius: 30px;
+    box-shadow: red 0 0 15px;
+}
+.Frontend{
+grid-area: n1;
+}
+.Backend{
+    grid-area: n2;
+}
+.Fullstack{
+    grid-area: n3;
+}
+.BasesDeDatos{
+    grid-area: n4;
+}
+.devops{
+    grid-area: n5;
+}
+.paginas{
+    grid-area: n6;
+}
+
+
+
+
+
+div.footer{
+    background-color: black;
+    background: linear-gradient(black 27%, red,black);
+    display: grid;
+    place-items: center;
+    box-shadow: red 0 0 45px;
+}
